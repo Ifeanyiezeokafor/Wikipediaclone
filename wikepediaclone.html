@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" body="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+    margin: 0px;
+}
+.before{
+    background-color: aliceblue;
+    width: 200px;
+    position: absolute;
+    height: 1000px;
+    top: 0px;
+    z-index: 5;
+    margin: 0px;
+    text-align: left;
+    transform: translateX(-10000px);
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+input:checked~div{
+    transform: translateX(0px);
+}
+input{
+    display: none;
+}
+.section{
+    margin: 0px;
+    padding: 0px;
+}
+.first{
+    background-color: rgb(248, 243, 243);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.second{
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(14, 219, 14);
+    border-width: 1px;
+    font-size: 1.3rem;
+    color: rgb(26, 26, 196);
+    padding: 5px;
+}
+.second-first{
+    background-color: rgb(14, 219, 14);
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    left: 50%;
+}
+.third{
+    font-size: 2rem;
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
+    margin-top: 20px;
+}
+.u,.ii{
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+    font-weight: bold;
+}
+.u{
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+.four{
+    margin: 0px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: .5px;
+    border-color: rgb(221, 221, 216);
+    font-size: small;
+    height: 20px;
+    background-color:rgba(255, 160, 125, 0.1);
+}
+.blue{
+    color: rgb(26, 26, 196) ;
+}
+@media screen and (max-width:552px){
+    .four{
+        margin: 0px;
+        padding: 0px;
+        border-style: solid;
+        border-width: 0px;
+        border-top-width: .5px;
+        border-color: rgb(221, 221, 216);
+        font-size: small;
+        height: 40px;
+        background-color:rgba(255, 160, 125, 0.1);
+    }
+}
+@media screen and (max-width:280px){
+    .four{
+        margin: 0px;
+        padding: 0px;
+        border-style: solid;
+        border-width: 0px;
+        border-top-width: .5px;
+        border-color: rgb(221, 221, 216);
+        font-size: small;
+        height: 60px;
+        background-color:rgba(255, 160, 125, 0.1);
+    }
+}
+    </style>
+    <title>wikipediaclone</title>
+</head>
+<body>
+    <input type="checkbox" id="bar">
+    <div class="before">
+        <label for="bar">&#10006;</label>
+    </div>
+    <div class="section">
+    <div class="first"><label for="bar">&#9776;</label> WIKIPEDIA</div>
+    <div class="second">
+        <div class="second-first">&#127794;</div><br>
+        Wiki Loves Earth:<br> An interatioal photographic contest<br>where you showcase Nigeria's<br>unique natural enviroment and<br>potentially win a prize.
+    </div>
+    <div class="third">Quantum mechaics</div>
+    <br><span class="u">Article</span> <span class="ii">Talk</span>
+    <div class="four">For a more accessible and less technical introduction to this topic see Yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyýyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyttt<span class="blue">introduction to quantum mechanics.</span></div>
+    <div class="five"><b>Quantum mechanics</b> is a fundamental <span class="blue">theory</span> in physics that describes the behaviour of nature</div>
+    </div>
+</body>
+</html>
